@@ -70,25 +70,22 @@ window.addEventListener('resize', () => {
 	renderer.setSize(window.innerWidth, window.innerHeight)
 })
 
-// Создаём кастомный курсор — маленькая белая светящаяся точка
 const cursor = document.createElement('div')
 cursor.classList.add('custom-cursor')
 document.body.appendChild(cursor)
 
-// Двигаем точку за курсором мыши
 window.addEventListener('mousemove', e => {
 	cursor.style.top = e.clientY + 'px'
 	cursor.style.left = e.clientX + 'px'
 })
 
-// Прячем кастомный курсор при наведении на иконки соцсетей
 const icons = document.querySelectorAll('.icons a')
 
 icons.forEach(icon => {
 	icon.addEventListener('mouseenter', () => {
-		cursor.style.display = 'none' // скрываем кастомный курсор
+		cursor.style.display = 'none'
 	})
 	icon.addEventListener('mouseleave', () => {
-		cursor.style.display = 'block' // показываем кастомный курсор
+		cursor.style.display = 'block'
 	})
 })

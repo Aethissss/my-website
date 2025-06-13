@@ -8,7 +8,7 @@ html {
 	background-color: black;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: white;
-	cursor: none; /* Отключаем системный курсор */
+	cursor: none;
 }
 
 #three-canvas {
@@ -57,18 +57,16 @@ html {
 	justify-content: center;
 }
 
-/* Telegram: голубой фон при наведении */
 .icons a[href*='t.me']:hover,
 .icons a[href*='t.me']:focus {
 	background-color: #1da1f2;
 	color: white;
 	transform: scale(1.3);
 	outline: none;
-	cursor: none; /* системный курсор не показываем */
+	cursor: none;
 	box-shadow: 0 0 12px #1da1f2;
 }
 
-/* Instagram: фирменный градиент при наведении */
 .icons a[href*='instagram']:hover,
 .icons a[href*='instagram']:focus {
 	background: linear-gradient(
@@ -86,7 +84,6 @@ html {
 	box-shadow: 0 0 12px #bc1888;
 }
 
-/* Steam: темный фон и легкое свечение при наведении */
 .icons a[href*='steam']:hover,
 .icons a[href*='steam']:focus {
 	background-color: #171a21;
@@ -97,7 +94,6 @@ html {
 	cursor: none;
 }
 
-/* Кастомный курсор — маленькая светящаяся точка */
 .custom-cursor {
 	position: fixed;
 	top: 0;
