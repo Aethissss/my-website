@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Звёзды на Three.js + Соцсети</title>
+
+		<!-- Font Awesome для соцсетей -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<!-- Канвас Three.js -->
+		<canvas id="three-canvas"></canvas>
+
+		<div class="social-container">
+			<h1>Kirill Ryzhkov</h1>
+			<div class="icons">
+				<a href="https://t.me/eIplaga" target="_blank" aria-label="Telegram">
+					<i class="fab fa-telegram-plane"></i>
+				</a>
+				<a
+					href="https://instagram.com/eiplaga"
+					target="_blank"
+					aria-label="Instagram"
+				>
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a
+					href="https://steamcommunity.com/profiles/76561198891439894/"
+					target="_blank"
+					aria-label="Steam"
+				>
+					<i class="fab fa-steam"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- Three.js из CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+		<script src="main.js" defer></script>
+	</body>
+</html>
